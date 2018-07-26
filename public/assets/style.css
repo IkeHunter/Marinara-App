@@ -80,9 +80,9 @@ body {
 
 .localSun {
   clear: left;
-  font-family: 'Acme', sans-serif;
-  font-size: 150px;
-  font-weight: bold;
+  font-family: 'Poiret One', cursive;
+  font-size: 130px;
+  font-weight: bolder;
 
 }
 
@@ -426,6 +426,95 @@ body {
   margin-bottom: 60px;
   background-color: #917676;
 }
+
+/* info page */
+
+.infTitle {
+  margin-top: 80px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 100px;
+  color: #DCF9FF;
+  text-align: center;
+}
+
+.explCon {
+  margin-top: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #DCF9FF;
+  /* text-align: center; */
+  padding-bottom: 30px;
+  text-decoration: none;
+  /* color: #00ACD6; */
+  color: white;
+
+}
+
+.tks {
+  margin-top: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  color: #DCF9FF;
+  /* text-align: center; */
+  padding-bottom: 30px;
+
+  text-align: center;
+}
+
+.eachInf {
+  padding-top: 15px;
+}
+
+.infLik {
+  margin-top: 35px;
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+  /* float: left; */
+}
+
+.infLik a {
+  text-decoration: none;
+  color: #00ACD6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

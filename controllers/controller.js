@@ -56,11 +56,9 @@ app.get('/info', (req,res)=>{
 app.get('/home', isLoggedIn, function(req, res){
 	//read
 	console.log('Read');
-
 	let sql = 'select * from tasks where userID = '+req.user.id+';';
 	db.query(sql, (err, results) => {
 		if(err) throw err;
-
 		res.render('home', {tasks: results, user: req.user});
 	});
 });
