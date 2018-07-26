@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Gaegu|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    <title>Marinara Organic</title>
+  </head>
+  <body>
+    <div class = "gTitle">To Do List</div>
+<div class="allForm">
+
+  <div class="addTodoTitle">
+    Add items to your to do list
+  </div>
+
+  <form id = "todoForm">
+    <input type="text" name="item">
+    <input id="todoBtn" type="submit" value="Add Item">
+    <!-- <button id="todoBtn"type="submit">Add</button> -->
+  </form>
+
+    <ul class="allList">
+
+      <% for  (i = 0; i < todoItems.length; i++) {%>
+        <li class="todoItm" id="<%= todoItems[i].item %>"><%= todoItems[i].item %></li>
+      <% } %>
+
+    </ul>
+
+</div>
+
+<div class="gmo">
+  To get more out of Marinara Organic,<br> you can <a href="/signup">Sign Up</a> or <a href="/signin">Log In</a>.
+</div>
+
+
+
+<script src = "/assets/script.js" type="text/javascript">
+
+</script>
+  </body>
+</html>
