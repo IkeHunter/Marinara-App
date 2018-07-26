@@ -20,6 +20,9 @@
 			<div class="addTodoTitle">
 				<%= user.firstname %>'s tasks
 			</div>
+			<div class="addTodoTitle">
+				Level <%= level %>
+			</div>
 
 			<ul class="taskUl">
 				<% for(i = 0; i < tasks.length; i++){ %>
@@ -38,6 +41,7 @@
 			</div>
 
 		</div>
+		<hr>
 		<div class="gmo">
 			Confused? Click <a href="/info">here</a>. <br>
 		</div>

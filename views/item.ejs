@@ -19,12 +19,25 @@
   <ul class = "itemUl">
     <% for(i = 0; i < items.length; i++){ %>
 
-      <li class = "itemLi">
-        <div class="eachItem" id="<%= items[i].id %>" >
-          <a href="/item-done/<%= items[i].id %>"><%= items[i].name %></a>
-          <div class="item itemX" id="<%= items[i].id %>">X</div>
-        </div>
-      </li>
+      <% if (items[i].done == 1){ %>
+        <li class = "itemLi itemDone">
+          <div class="eachItem" id="<%= items[i].id %>" >
+            <a href="/item-done/<%= items[i].id %>"><%= items[i].name %></a>
+            <div class="item itemX" id="<%= items[i].id %>">X</div>
+          </div>
+        </li>
+      <% } %>
+      <% if (items[i].done == 0){ %>
+        <li class = "itemLi">
+          <div class="eachItem" id="<%= items[i].id %>" >
+            <a href="/item-done/<%= items[i].id %>"><%= items[i].name %></a>
+            <div class="item itemX" id="<%= items[i].id %>">X</div>
+          </div>
+        </li>
+      <% } %>
+
+
+
 
     <% } %>
   </ul>

@@ -57,10 +57,24 @@ app.get('/home', isLoggedIn, function(req, res){
 	//read
 	console.log('Read');
 	let sql = 'select * from tasks where userID = '+req.user.id+';';
+	let sql2 = 'select * from items where done = 1 && userID = '+req.user.id+';'
 	db.query(sql, (err, results) => {
 		if(err) throw err;
-		res.render('home', {tasks: results, user: req.user});
+		db.query(sql2, (err, result) => {
+			if(err) throw err;
+			let lvl = result.length;
+			let lvlNum = 0;
+			if (lvl > 1 && lvl < 5){
+				lvlNum = 1;
+			}else if(lvl > 5 && lvl <8){
+				lvlNum = 2;
+			}else if(lvl >8){
+				lvlNum = 3;
+			}
+			res.render('home', {tasks: results, user: req.user, level: lvlNum});
+		});
 	});
+
 });
 
 //new-task page

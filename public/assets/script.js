@@ -1,23 +1,7 @@
 $(document).ready(function(){
 	console.log('JavaScript Connected');
 
-
-//   $('li').on('click', function(){
-// 		var id = $(this).attr('id');
-//     id = id.replace(/ /g, '-');
-// 		console.log("You Clicked " + id);
-//
-//     $.ajax({
-// 			type: 'DELETE',
-// 			url: '/todo/' + id,
-// 			//"data:"  is also used in these functions. Used for posting
-// 			success: function(data){
-// //				some code to do something with the response
-// 				location.reload();
-// 			}
-// 		});
-//
-// 	});
+var itmDone = false;
 
 $('#todoForm').on('submit', function(){
 
